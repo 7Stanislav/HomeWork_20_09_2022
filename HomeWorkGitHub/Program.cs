@@ -17,6 +17,7 @@ Console.WriteLine($"Вторая цифра числа {num}: {num1 % 10}");
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
+/*
 Console.WriteLine("Введите число");
 int num = int.Parse(Console.ReadLine());
 if (num < 100)
@@ -31,4 +32,27 @@ else
     }
     int result = (num % 10);
     Console.WriteLine($"Третья цифра введенного числа: {result}");
+};
+*/
+
+// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели и проверяет,
+// является ли этот день выходным.
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+
+Console.WriteLine("Введите цифру, обозначающую день недели");
+int num = int.Parse(Console.ReadLine());
+if ((num < 1) || (num > 7))
+{
+    Console.WriteLine("Нужно ввести цифру от 1 до 7");
+}
+else
+{
+    if (6 > num)
+    {
+        Console.WriteLine("День не является выходным");
+    }
+    else
+    Console.WriteLine("День является выходным");
 };
